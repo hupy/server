@@ -1,0 +1,31 @@
+{
+  "replicas":"1",
+  "exposePortNum":0,
+  "loadBalanceDrafts":[],
+  "innerServiceDrafts":[],
+  "healthCheckerDraft":{
+    "type":"NONE"
+  },
+  "networkMode":"DEFAULT",
+  "accessType":"DIY",
+  "logDraft":null,
+  "containerDrafts":[{
+    "image":"admin/openxxs-pure-test",
+    "registry":"https://registry-in.beta.sohucs.com",
+    "tag":"latest",
+    "cpu":"0.5",
+    "mem":"1024",
+    "envs":[]
+  }],
+  "labelSelectors":[{
+    "name":"TESTENV",
+    "content":"HOSTENVTYPE"
+  }],
+  "hostEnv":"TEST",
+  "namespace":"default",
+  "deployName":"openxxs-first-blood",
+  "clusterId":1,
+  "creatorId":1,
+  "collectionId" : 1,
+  "deploymentType" : "Deployment"
+}

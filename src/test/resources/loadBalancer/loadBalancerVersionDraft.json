@@ -1,0 +1,23 @@
+{
+    "listenPort" : 2267,
+    "externalIPs": [
+        "192.168.65.64"
+    ],
+    "nodeNames": [
+        "test-host-two"
+    ],
+    "registry": "10.31.92.142:5000",
+    "image": "domeos/nginx-controller",
+    "tag": "1.0",
+    "lbMethod": "ROUNDROBIN",
+    "cpu": 0.5,
+    "mem": 512,
+    "selectors": [
+        {
+            "name": "TESTENV",
+            "content": "HOSTENVTYPE"
+        }
+    ],
+    "volumeConsole": null,
+    "deployIdForLB": 2
+}

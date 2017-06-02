@@ -1,0 +1,25 @@
+{
+    "lbcId": "1",
+    "name": "testk8sproxy8",
+    "description": "testproxyonetestproxyone",
+    "type": "EXTERNAL_SERVICE",
+    "clusterId": 2,
+    "namespace": "default",
+    "externalIPs": [
+        "192.168.65.64"
+    ],
+    "serviceDraft": {
+        "lbPorts": [
+            {
+                "port": 6790,
+                "targetPort": 8080,
+                "protocol": "TCP"
+            }
+        ],
+        "sessionAffinity": "true",
+        "deployId": 2,
+        "deployName": "deploymentforlb8",
+        "deployStatus": "RUNNING"
+    },
+    "nginxDraft": null
+}

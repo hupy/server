@@ -1,0 +1,10 @@
+{
+  "id": 2,
+  "name": "myclusterforlb",
+  "api": "192.168.65.65:8080",
+  "tag": null,
+  "ownerName": "test",
+  "domain": "domeos.local",
+  "dns": null,
+  "etcd": "http://192.168.65.64:4012"
+}

@@ -1,0 +1,51 @@
+{
+    "creatorId": 1,
+    "collectionId": "1",
+    "deployName": "deploymentforlb8",
+    "description": "deploymentforlb8",
+    "versionType": "CUSTOM",
+    "deploymentType": "DEPLOYMENT",
+    "replicas": 1,
+    "clusterId": 2,
+    "namespace": "default",
+    "hostEnv": "TEST",
+    "networkMode": "DEFAULT",
+    "labelSelectors": [
+        {
+            "name": "TESTENV",
+            "content": "HOSTENVTYPE"
+        }
+    ],
+    "loadBalancerDraft": {
+        "sessionAffinity": "false",
+        "type": "INNER_SERVICE",
+        "loadBalancerPorts": [
+            {
+                "port": 8080,
+                "targetPort": 8080,
+                "protocol": "TCP"
+            }
+        ]
+    },
+    "accessType": "K8S_SERVICE",
+    "exposePortNum": 0,
+    "podSpecStr": "",
+    "containerConsoles": [
+        {
+            "registry": "http://10.31.92.142:5000",
+            "image": "library/tomcat",
+            "tag": "latest",
+            "cpu": 0.5,
+            "mem": 512,
+            "envs": [],
+            "healthChecker": {
+                "type": "NONE"
+            },
+            "logItemDrafts": [],
+            "imagePullPolicy": "Always",
+            "autoDeploy": false,
+            "volumeMountConsoles": [],
+            "configConsoles": []
+        }
+    ]
+}

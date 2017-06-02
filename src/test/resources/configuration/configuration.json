@@ -1,0 +1,10 @@
+{
+  "id":1,
+  "name":"test",
+  "description":"hahaaaa",
+  "clusterId":1,
+  "namespace":"default",
+  "data":{
+    "test":"aaaa"
+  }
+}

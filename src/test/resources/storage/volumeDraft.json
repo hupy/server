@@ -1,0 +1,12 @@
+{
+  "id": 1,
+  "name": "my-test",
+  "clusterId": 1,
+  "namespace": "default",
+  "capacity": 100.0,
+  "accessMode": "READWRITEONCE",
+  "reclaimPolicy": "RETAIN",
+  "glusterfsDraft": {
+    "path":"gluster-k8s-test"
+  }
+}

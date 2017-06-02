@@ -1,0 +1,5 @@
+{
+  "name" : "lbcproxy",
+  "description" : "lb collection test",
+  "type" : "KUBE_PROXY"
+}

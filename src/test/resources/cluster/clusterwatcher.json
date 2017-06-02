@@ -1,0 +1,17 @@
+{
+    "clusterId": "2",
+    "containerDrafts": [
+        {
+            "registry": "http://10.31.92.142:5000",
+            "image": "kube_event_watcher",
+            "tag": "v0.1.0",
+            "mem": 0,
+            "cpu": 0
+        }
+    ],
+    "hostEnve": "TEST",
+    "labelSelectors": [],
+    "namespace": "default",
+    "name": "testwatcher-1",
+    "description": "testwatchertestwatcher"
+}

@@ -1,0 +1,6 @@
+{
+  "name" : "lbcnginx",
+  "description" : "lb collection test2",
+  "type" : "NGINX"
+}
+

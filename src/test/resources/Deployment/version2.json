@@ -1,0 +1,27 @@
+{
+  "deployId": 1,
+  "containerDrafts": [
+    {
+    "image":"admin/openxxs-pure-test",
+    "registry":"http://registry-in.beta.sohucs.com",
+    "tag":"latest",
+    "cpu":"1",
+    "mem":"1024",
+      "envs": [
+        {
+          "key": "TESTENV",
+          "value": "testenv",
+          "description": "002"
+        }
+      ]
+    }
+  ],
+  "labelSelectors": [
+    {
+      "name": "TESTENV",
+      "content": "HOSTENVTYPE"
+    }
+  ],
+  "logDraft": null,
+  "hostList": []
+}

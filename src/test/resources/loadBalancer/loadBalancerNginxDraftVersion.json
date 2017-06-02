@@ -1,0 +1,41 @@
+{
+    "lbcId": "1",
+    "name": "testnginxlbver",
+    "description": "testnginxnginxtestnginxnginx",
+    "type": "NGINX",
+    "clusterId": 2,
+    "namespace": "default",
+    "externalIPs": [
+        "192.168.65.64"
+    ],
+    "serviceDraft": null,
+    "nginxDraft": {
+        "listenPort": 7788,
+        "nodeNames": [
+            "test-host-two"
+        ],
+        "registry": "10.31.92.142:5000",
+        "image": "domeos/nginx-controller",
+        "tag": "1.0",
+        "lbMethod": "ROUNDROBIN",
+        "cpu": 0.5,
+        "mem": 512,
+        "selectors": [
+            {
+                "name": "TESTENV",
+                "content": "HOSTENVTYPE"
+            }
+        ],
+        "volumeConsole": null,
+        "rules": [
+            {
+                "domain": "fanhaoisme.com",
+                "deployId": 1,
+                "deployName": "deploymentforlb8",
+                "deployStatus": "RUNNING",
+                "serviceName": "dmo-deploymentforlb8",
+                "servicePort": 8080
+            }
+        ]
+    }
+}
